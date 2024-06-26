@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './home/HomePage';
+import BlogPage from './blog/BlogPage';
+import ShopPage from './shop/ShopPage';
+import HeaderCompoent from './components/header/HeaderCompoent';
+import FooterComponent from './components/footer/FooterComponent';
+import ProductDetail from './product/ProductDetail';
+import LoginPage from './login/LoginPage';
+import SignUpPage from './signup/SignUpPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <HeaderCompoent />
+        <Routes>
+            <Route path="/" Component={HomePage} />
+            <Route path="/blog" Component={BlogPage}/>
+            <Route path="/cua-hang" Component={ShopPage} />
+            <Route path='/san-pham/:slug' element={<ProductDetail />} />
+            {/* login & sign up */}
+            <Route path="/dang-nhap" Component={LoginPage} />
+            <Route path="/dang-ky" Component={SignUpPage} />
+        </Routes>
+        <FooterComponent />
+      </div>
+    </>
   );
 }
 
