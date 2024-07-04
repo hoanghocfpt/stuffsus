@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const ProductDetail = () => {
     // set scroll to top
@@ -8,27 +8,27 @@ const ProductDetail = () => {
     return (
         <div className='px-[3%]'>
             <div className='py-5'>
-                <span>Cửa hàng</span>
+                <Link to={'/cua-hang'}>Cửa hàng</Link>
                 <span> / </span>
                 <span>{slug}</span>
             </div>
             <div className='grid grid-cols-[40%,1fr] gap-8'>
                 <div className='pb-12'>
-                    <div className='overflow-hidden rounded-xl'>
-                        <img className='w-full h-full object-cover' src="https://via.placeholder.com/500" alt="product" />
+                    <div className='overflow-hidden  aspect-square rounded-xl'>
+                        <img className='w-full h-full object-cover' src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZW95OFpIcWQ1d0NuTUppaGxOVkdhQWlCQmV2WTA2cncybDF2YzFnKzI0S3J4M3lYcDIyK01lckZBaW5GTC9DMEQxcjBVRyswWG14bEI4WVZBcUIybEZSaWQzVjNJcnNFczFYZjI5MjZkdWlnPT0=&traceId=1" alt="product" />
                     </div>
-                    <div className='flex items-center gap-3 py-2'>
-                        <div className='overflow-hidden rounded-md'>
-                            <img src="https://via.placeholder.com/100" alt="product" />
+                    <div className='flex mt-4 items-center gap-3 py-2'>
+                        <div className='aspect-square flex-shrink-0 cursor-pointer h-24 overflow-hidden rounded-md'>
+                            <img className='w-full h-full object-cover' src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZW95OFpIcWQ1d0NuTUppaGxOVkdhQWlCQmV2WTA2cncybDF2YzFnKzI0S3J4M3lYcDIyK01lckZBaW5GTC9DMEQxcjBVRyswWG14bEI4WVZBcUIybEZSaWQzVjNJcnNFczFYZjI5MjZkdWlnPT0=&traceId=1" alt="product" />
                         </div>
-                        <div className='overflow-hidden rounded-md'>
-                            <img src="https://via.placeholder.com/100" alt="product" />
+                        <div className='aspect-square flex-shrink-0 cursor-pointer h-24 overflow-hidden rounded-md'>
+                            <img className='w-full h-full object-cover' src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZW95OFpIcWQ1d0NuTUppaGxOVkdhQWlCQmV2WTA2cncybDF2YzFnKzI0S3J4M3lYcDIyK01lckZBaW5GTC9DMEQxcjBVRyswWG14bEI4WVZBcUIybEZSaWQzVjNJcnNFczFYZjI5MjZkdWlnPT0=&traceId=1" alt="product" />
                         </div>
-                        <div className='overflow-hidden rounded-md'>
-                            <img src="https://via.placeholder.com/100" alt="product" />
+                        <div className='aspect-square flex-shrink-0 cursor-pointer h-24 overflow-hidden rounded-md'>
+                            <img className='w-full h-full object-cover' src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZW95OFpIcWQ1d0NuTUppaGxOVkdhQWlCQmV2WTA2cncybDF2YzFnKzI0S3J4M3lYcDIyK01lckZBaW5GTC9DMEQxcjBVRyswWG14bEI4WVZBcUIybEZSaWQzVjNJcnNFczFYZjI5MjZkdWlnPT0=&traceId=1" alt="product" />
                         </div>
-                        <div className='overflow-hidden rounded-md'>
-                            <img src="https://via.placeholder.com/100" alt="product" />
+                        <div className='aspect-square flex-shrink-0 cursor-pointer h-24 overflow-hidden rounded-md'>
+                            <img className='w-full h-full object-cover' src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZW95OFpIcWQ1d0NuTUppaGxOVkdhQWlCQmV2WTA2cncybDF2YzFnKzI0S3J4M3lYcDIyK01lckZBaW5GTC9DMEQxcjBVRyswWG14bEI4WVZBcUIybEZSaWQzVjNJcnNFczFYZjI5MjZkdWlnPT0=&traceId=1" alt="product" />
                         </div>
                     </div>
                 </div>
@@ -54,13 +54,22 @@ const ProductDetail = () => {
                     <div className='py-3'>
                         <span className='text-xl font-medium'>Màu sắc</span>
                         <div className='flex items-center gap-4 pt-2'>
-                            <div className='overflow-hidden rounded-md cursor-pointer outline outline-gray-600'>
-                                <img src="https://via.placeholder.com/70" alt="color" />
+                            <div className='h-12 aspect-square overflow-hidden rounded-md cursor-pointer border-[2.5px] border-gray-400'>
+                                <img className='w-full h-full object-cover' src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZW95OFpIcWQ1d0NuTUppaGxOVkdhQWlCQmV2WTA2cncybDF2YzFnKzI0S3J4M3lYcDIyK01lckZBaW5GTC9DMEQxcjBVRyswWG14bEI4WVZBcUIybEZSaWQzVjNJcnNFczFYZjI5MjZkdWlnPT0=&traceId=1" alt="color" />
                             </div>
-                            <div className='overflow-hidden rounded-md cursor-pointer'>
-                                <img src="https://via.placeholder.com/70" alt="color" />
+                            <div className='h-12 aspect-square overflow-hidden rounded-md cursor-pointer border-[2.5px] border-transparent'>
+                                <img className='w-full h-full object-cover' src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZW95OFpIcWQ1d0NuTUppaGxOVkdhQWlCQmV2WTA2cncybDF2YzFnKzI0S3J4M3lYcDIyK01lckZBaW5GTC9DMEQxcjBVRyswWG14bEI4WVZBcUIybEZSaWQzVjNJcnNFczFYZjI5MjZkdWlnPT0=&traceId=1" alt="color" />
                             </div>
                         </div>
+                    </div>
+                    <div className='flex gap-3 justify-center w-1/2 pt-3'>
+                        <button className='w-1/2 border-[1.7px] border-[#777] text-[#555] px-5 font-medium flex items-center justify-center gap-2 py-2 rounded-full'>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" className="size-6">
+                                <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>
+                            <span className='text-[#555]'>Thêm vao gio hang</span>
+                        </button>
+                        <button className='w-1/2 border-[1.7px] border-[#121212] bg-[#121212] text-white px-5 py-2 rounded-full inline-block flex-shrink-0'>Mua ngay</button>
                     </div>
                     <div className='flex items-center pt-4'>
                         <div className='px-5 cursor-pointer border-b-2 border-gray-900 py-2'>
@@ -70,6 +79,7 @@ const ProductDetail = () => {
                             <span className='font-medium text-[#444]'>Đánh giá</span>
                         </div>
                     </div>
+                    
                     <div className='border-t py-4'>
                         lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit
                     </div>

@@ -120,7 +120,7 @@ const SignUpPage = () => {
                             </div>
                         </div>
                         <div>
-                            <span className='text-sm'>Chưa có tài khoản? <Link to='/dang-ky' className='text-blue-600'>Đăng ký ngay</Link></span>
+                            <span className='text-sm'>Đã có tài khoản? <Link to='/dang-nhap' className='text-blue-600'>Đăng nhập</Link></span>
                         </div>
                     </div>
                 </div>

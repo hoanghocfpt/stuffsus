@@ -1,3 +1,5 @@
+import LatestBlogConponent from "../components/blog/LatestBlogComponent";
+import TopBlogComponent from "../components/blog/TopBlogComponent";
 
 
 const BlogPage = () => {
@@ -15,8 +17,8 @@ const BlogPage = () => {
                     <button className='bg-white w-fit font-medium text-black px-5 py-2 text-sm flex-shrink-0 rounded-full mt-5'>Đọc thêm</button>
                     <div className='flex items-center gap-3 cursor-pointer absolute py-2 px-2 bottom-[116px] right-10'>
                         <span className='text-sm text-white'>Tiếp theo</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                         </svg>  
 
                     </div>
@@ -40,43 +42,8 @@ const BlogPage = () => {
                         </div>
                     </div>
                     <div className='gap-2 py-8'>
-                        <div className='py-5 pr-4'>
-                            <span className='font-medium text-xl'>Bài viết nổi bật</span>
-                            <div className='py-3 grid grid-cols-4 gap-x-6 gap-y-3'>
-                                <div className='col-span-2 row-span-2'>
-                                    <div className='overflow-hidden rounded-lg h-[400px]'> 
-                                        <img className='w-full h-full object-cover' src='/assets/photo-1608402515433-d43f0fc28812.avif' alt=''></img>
-                                    </div>
-                                    <span className='text-sm text-[#444]'>9 phut doc</span>
-                                    <span className='text-2xl font-semibold block'>Nghệ thuật thiết kế, trang trí nội thất nhà cửa nam 2024</span>
-                                    <p className='line-clamp-3 text-[#444]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  in lacus, luctus tincidunt. Nulla in vel, sit amet. </p>
-                                </div>
-                                <div className='col-span-2 flex gap-3'>
-                                    <div className='overflow-hidden rounded-lg h-[270px] w-[270px] flex-shrink-0'> 
-                                        <img className='w-full h-full object-cover' src='/assets/photo-1608402515433-d43f0fc28812.avif' alt=''></img>
-                                    </div>
-                                    <div>
-                                        <span className='text-sm text-[#444]'>9 phut doc</span>
-                                        <span className='text-2xl font-semibold block'>Nghệ thuật thiết kế, trang trí nội thất nhà cửa nam 2024</span>
-                                        <p className='line-clamp-3 text-[#444]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  in lacus, luctus tincidunt. Nulla in vel, sit amet. </p>
-                                    </div>
-                                </div>
-                                <div className='col-span-2 flex gap-3'>
-                                    <div className='overflow-hidden rounded-lg h-[270px] w-[270px] flex-shrink-0'> 
-                                        <img className='w-full h-full object-cover' src='/assets/photo-1608402515433-d43f0fc28812.avif' alt=''></img>
-                                    </div>
-                                    <div className="flex flex-col">
-                                        <span className='text-sm text-[#444]'>9 phut doc</span>
-                                        <span className='text-2xl font-semibold block'>Nghệ thuật thiết kế, trang trí nội thất nhà cửa nam 2024</span>
-                                        <p className='line-clamp-3 text-[#444]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  in lacus, luctus tincidunt. Nulla in vel, sit amet. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <span className='font-medium text-xl'>Bài viết mới nhất</span>
-                            
-                        </div>
+                        <TopBlogComponent></TopBlogComponent>
+                        <LatestBlogConponent></LatestBlogConponent>
                     </div>
                 </div>
             </div>
