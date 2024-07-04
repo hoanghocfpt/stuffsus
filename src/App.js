@@ -9,6 +9,7 @@ import FooterComponent from './components/footer/FooterComponent';
 import ProductDetail from './product/ProductDetail';
 import LoginPage from './login/LoginPage';
 import SignUpPage from './signup/SignUpPage';
+import CartPage from './cart/CartPage';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
             {/* login & sign up */}
             <Route path="/dang-nhap" Component={LoginPage} />
             <Route path="/dang-ky" Component={SignUpPage} />
+            {/* cart */}
+            <Route path='/gio-hang' Component={CartPage}/>
         </Routes>
         <FooterComponent />
       </div>
