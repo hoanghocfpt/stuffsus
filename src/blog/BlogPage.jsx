@@ -1,5 +1,5 @@
-import LatestBlogConponent from "../components/blog/LatestBlogComponent";
-import TopBlogComponent from "../components/blog/TopBlogComponent";
+import LatestBlogConponent from "../components/page/blog/LatestBlogComponent";
+import TopBlogComponent from "../components/page/blog/TopBlogComponent";
 
 
 const BlogPage = () => {
