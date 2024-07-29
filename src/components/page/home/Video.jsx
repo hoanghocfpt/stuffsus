@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Video = () => {
+const Video = ({data}) => {
     return (
         <div className='group relative flex justify-center items-center cursor-pointer overflow-hidden rounded-xl'>
             <div className='w-full h-full'>
-              <img className='w-full h-full object-cover' src='https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-p-0037-euttp/db90242f058e4c43b8a37253733d42d8_1715993202~tplv-dmt-logom:tos-useast2a-i-0068-euttp/osKwIeLnAg8pfnGPNAGAQSHDGDZA9ICRAfIGew.image?lk3s=b59d6b55&nonce=22807&refresh_token=0f935fc68ee915f99c51f1129200d84f&x-expires=1720429200&x-signature=z3HOdzS2hqUen7jUrOeOAH72ZsE%3D&shp=b59d6b55&shcp=-' alt='tiktok' />
+              <img className='w-full h-full object-cover' src='https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-i-photomode-euttp/ed042804e0914c319d0d7f192e049ba5~tplv-photomode-image.jpeg?lk3s=81f88b70&nonce=16021&refresh_token=990e4bfca4c0ef8727fe9f52526d8f1e&x-expires=1721142000&x-signature=uZiIsyWXpw02R%2BF3Xwy5ZcmI7Z8%3D&shp=81f88b70&shcp=-' alt='tiktok' />
             </div>
             <div className='absolute'>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="transparent" className="transition-all duration-300 group-hover:fill-[#fff] w-12 h-12">

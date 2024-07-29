@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Product = ({index,item}) => {
     return (
-        <div key={index} className='flex-shrink-0 w-[350px]'>
+        <div key={index} className='mx-[2%]'>
             <div className='w-full aspect-square rounded-xl overflow-hidden'>
                 <img className='h-full w-full object-cover' src={item.img} alt='' />
             </div>
             <div className='py-3'>
-                <Link to={`/san-pham/`+item.id} className='text-xl font-semibold line-clamp-2 text-[#333]'>{item.name} {item.id}</Link>
+                <Link to={`/san-pham/`+item.id} className='text-xl font-semibold line-clamp-2 text-[#333]'>{item.id} {item.name}</Link>
                 <div className='flex items-end justify-between'>
                     <div className='flex items-center gap-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F19D4E" className="size-6">

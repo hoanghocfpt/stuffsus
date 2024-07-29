@@ -1,93 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import Product from '../components/page/shop/Product';
+import axios from 'axios';
 
 const ShopPage = () => {
     // set scroll to top
     window.scrollTo(0, 0);
-    const listProduct = [
-        {
-            id: 1,
-            name: 'Bàn làm việc FUNA (BLV09) 4 chân sắt tròn to 50x50 chắc chắn, decor phòng phong cách hiên đại, vintage.',
-            price: 500000,
-            salePrice: 489000,
-            rating: 5.0,
-            img: '/products/demo.jpg',
-            totalRating: 120
-        },
-        {
-            id: 2,
-            name: 'Bàn làm việc FUNA (BLV09) 4 chân sắt tròn to 50x50 chắc chắn, decor phòng phong cách hiên đại, vintage.',
-            price: 500000,
-            salePrice: 489000,
-            rating: 5.0,
-            img: '/products/demo.jpg',
-            totalRating: 120
-        },
-        {
-            id: 3,
-            name: 'Bàn làm việc FUNA (BLV09) 4 chân sắt tròn to 50x50 chắc chắn, decor phòng phong cách hiên đại, vintage.',
-            price: 500000,
-            salePrice: 489000,
-            rating: 5.0,
-            img: '/products/demo.jpg',
-            totalRating: 120
-        },
-        {
-            id: 4,
-            name: 'Bàn làm việc FUNA (BLV09) 4 chân sắt tròn to 50x50 chắc chắn, decor phòng phong cách hiên đại, vintage.',
-            price: 500000,
-            salePrice: 489000,
-            rating: 5.0,
-            img: '/products/demo.jpg',
-            totalRating: 120
-        },
-        {
-            id: 5,
-            name: 'Bàn làm việc FUNA (BLV09) 4 chân sắt tròn to 50x50 chắc chắn, decor phòng phong cách hiên đại, vintage.',
-            price: 500000,
-            salePrice: 489000,
-            rating: 5.0,
-            img: '/products/demo.jpg',
-            totalRating: 120
-        },
-        {
-            id: 6,
-            name: 'Bàn làm việc FUNA (BLV09) 4 chân sắt tròn to 50x50 chắc chắn, decor phòng phong cách hiên đại, vintage.',
-            price: 500000,
-            salePrice: 489000,
-            rating: 5.0,
-            img: '/products/demo.jpg',
-            totalRating: 120
-        },
-        {
-            id: 7,
-            name: 'Bàn làm việc FUNA (BLV09) 4 chân sắt tròn to 50x50 chắc chắn, decor phòng phong cách hiên đại, vintage.',
-            price: 500000,
-            salePrice: 489000,
-            rating: 5.0,
-            img: '/products/demo.jpg',
-            totalRating: 120
-        },
-        {
-            id: 8,
-            name: 'Bàn làm việc FUNA (BLV09) 4 chân sắt tròn to 50x50 chắc chắn, decor phòng phong cách hiên đại, vintage.',
-            price: 500000,
-            salePrice: 489000,
-            rating: 5.0,
-            img: '/products/demo.jpg',
-            totalRating: 120
-        },
-        {
-            id: 9,
-            name: 'Bàn làm việc FUNA (BLV09) 4 chân sắt tròn to 50x50 chắc chắn, decor phòng phong cách hiên đại, vintage.',
-            price: 500000,
-            salePrice: 489000,
-            rating: 5.0,
-            img: '/products/demo.jpg',
-            totalRating: 120
-        }
-    ];
+    const [listProduct, setListProduct] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:5000/products');
+                setListProduct(response.data);
+                console.log(response);
+            } catch (error) {
+                console.log('Failed to fetch data', error);
+            }
+        };
+        fetchData();
+    }, []);
+    console.log(listProduct);
     return (
         <>
             <div className='h-[500px] relative flex justify-center overflow-hidden items-center w-full'>

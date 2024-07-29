@@ -24,10 +24,7 @@ const Slider = () => {
         }
         console.log(activeIndex);
     }
-    // handleNext each 3s
-    useEffect(()=>{
-        setInterval(handleNext,3000)
-    })
+
     return (
         <>
             <div className='px-[3%] pt-3 relative flex gap-0 w-full overflow-hidden'>
@@ -47,7 +44,7 @@ const Slider = () => {
                 <div className='bg-[#24144e] flex gap-0 w-full items-center rounded-3xl overflow-hidden'>
                     {data.map((item, index) => (
                         <Link to={item.url} key={index} className={`${activeIndex === index ? `opacity-1`:`opacity-0`} transition-all duration-700 flex-shrink-0 overflow-hidden flex items-center justify-center w-full h-[450px]`} style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
-                            <img src={item.image} alt='banner' className='w-full h-full object-cover' />
+                            <img src={item.image} alt={index} className='w-full h-full object-cover' />
                         </Link>
                     ))}
                 </div>
